@@ -1,0 +1,302 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+[hidden] {
+    display: none;
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+            -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:active,
+a:hover {
+    outline: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+dfn {
+    font-style: italic;
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+img {
+    border: 0;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+figure {
+    margin: 0;
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    border: 0;
+    padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+}
+
+button,
+input {
+    line-height: normal;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* Buttons */
+
+.btn {
+	font-size: 0.885em;
+	font-weight: normal;
+	display: inline-block;
+	margin: 0 auto;
+	padding: 0.5em 0;
+	cursor: pointer;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	pointer-events: auto;
+	color: #fff;
+	border: 0;
+	background: none;
+	font-family: 'Roboto Condensed', Avenir, sans-serif;
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+}
+
+.btn:focus {
+	outline: none;
+}
+
+.btn:hover {
+	opacity: 0.5;
+}
+
+.btn--trigger,
+.btn--modal-trigger {
+	margin: 0 0.5em;
+	border-bottom: 1px solid;
+}
+
+.btn--modal-trigger {
+	margin: 2em 0 0 0;
+}
+
+.no-js .btn--modal-trigger {
+	display: none;
+}
+
+.btn--close {
+	color: #1e156d;
+}
+
+.btn--prev {
+	margin: 0 1.5em 0 0.5em;
+}
+
+.btn--hidden {
+	pointer-events: none;
+	opacity: 0;
+}
+
+.actions {
+	position: absolute;
+	right: 6vw;
+	bottom: 60px;
+	text-align: center;
+}
+
+.no-js .actions {
+	display: none;
+}
+/*
+layout
+*/
+.content{
+    font-family: 'Roboto Condensed', Avenir, sans-serif;
+    width:100%;
+    height:100%;
+}
+.slideshow{
+    width:100%;
+    height:250px;
+    overflow:hidden;
+    margin:auto 0;
+    position: absolute;
+    top:30%;
+}
+.slide-current{
+    width: 90%;
+    text-align:right;
+    margin:0 auto;
+}
+h2{
+    color:#fff;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 10vw;
+    font-family:'黑体';
+    display:block;
+    text-shadow:0px 0px 3px rgba(0,0,0,1);
+}

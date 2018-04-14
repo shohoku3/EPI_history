@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EPI 电子实验室 修改个人信息</title>
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <div id="inner">
+                <h1>管理员</h1>
+                <img id="img1" src="img/user/201512822344155194.jpg">
+                <img id="img2"  src="img/user/u=1039983716,1196760112&fm=21&gp=0.jpg">
+                <img id="img3"  src="img/user/u=1123407491,2829757449&fm=21&gp=0.jpg">
+                <img id="img4" src="img/user/detail.jpg">
+                <img id="img5" src="img/user/u=752831177,4081109132&fm=21&gp=0.jpg">
+                <input type="button" value="联系他">
+            </div>
+            <div id="chat-box">
+                <h1>问题反馈</h1>
+                <div class="close"><img src="img/icon/关闭.png"></div>
+                <ul class="content" style="display:none;" id="content2">
+                    <li class="chat-bar">
+                        <div class="left-icon"><img src="img/user/201512822344155194.jpg"></div>
+                        <span class="left-bar" id="left-bar1"></span>
+                    </li>
+                    <li class="chat-bar" style="display: none;" id="feedback">
+                        <div class="right-icon"><img src="img/user/u=1039983716,1196760112&fm=21&gp=0.jpg"></div>
+                        <span class="right-bar">好的我们会尽快解决您的问题</span>
+                    </li>
+                </ul>
+                <div class="bottom-box">
+                    <textarea id="input" placeholder="请输入你的问题"></textarea>
+                    <input type="button" value="发送" onclick="contentLink()" id="import">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script>
+    //chat-box show
+    $('input[type="button"]').click(function() {
+        $('#chat-box').show(200);
+    });
+    //close chat-box
+    $('.close').click(function() {
+        $('#chat-box').hide(200);
+        $('#content2').empty();
+        $('#input').val("");
+    });
+    //header-nav
+    $('.bottom-toggle').click(function() {
+        $('#header-nav').slideToggle(200);
+        $('.#nav-toggle').css("transform", "rotate(180deg)");
+    });
+    //when textarea focus content1 hide() &&content2 show()
+    $('textarea').focus(function() {
+        $('#content2').show();
+    });
+    //input #import
+    $('#import').click(function() {
+        if ($('textarea').val() != "") {
+            setTimeout(function() {
+                $('#feedback').show();
+            }, 500);
+        };
+        setTimeout(function(){
+            alert('我们已经收到你的反馈');
+        },1200);
+        setTimeout(function(){
+            window.location.href="index.html";
+        },1500);
+    });
+    //photo click
+    $('#img1').click(function(){
+        $('#img1').addClass('click');
+    });
+    $('#img2').click(function(){
+        $('#img2').addClass('click');
+    });
+    $('#img3').click(function(){
+        $('#img3').addClass('click');
+    });
+    $('#img4').click(function(){
+        $('#img4').addClass('click');
+    });
+    $('#img5').click(function(){
+        $('#img5').addClass('click');
+    })
+    </script>
+    <script>
+    function contentLink() {
+        var show = document.getElementById('left-bar1');
+        var content = document.getElementById('input');
+        show.innerHTML = content.value;
+    }
+    </script>
+</body>
+
+</html>

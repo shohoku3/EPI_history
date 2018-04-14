@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html;">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scaleable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="ture">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="telephone=no" name="format-detection">
+    <meta name="keywords" content="EPI,西安邮电大学,EPI,西邮,西安邮电大学电子实验室暨大学生创新创业协会,电子实验室">
+    <meta name="description" content="EPI电子实验室是一个以硬件为主，软硬件相结合的高水平电子设计实验室">
+    <title>EPI电子实验室-后台管理页面</title>
+    <!--default css-->
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <!--page css-->
+    <link rel="stylesheet" href="css/mange.css" type="text/css">
+</head>
+
+<body>
+    <div class="content">
+        <!--头部信息-->
+        <header class="main-header">
+            <a href="mange.html"><span class="logo">EPI&#160;&#160;<strong>后台管理系统</strong></span></a>
+            <nav class="navbar navbar-static-top">
+                <a class="sidebar-toggle">
+                    <img src="img/icon/nav.png">
+                </a>
+                <div class="navbar-custom-menu">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown messages-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/icon/mail.png"><span class="label label-success">4</span>
+                            </a>
+                        </li>
+                        <li class="dropdown notifications-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/icon/ring.png">
+                                <span class="label label-warning">10</span>
+                            </a>
+                        </li>
+                        <li class="dropdown tasks-menu">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/icon/prompt.png">
+                                <span class="label label-danger">9</span>
+                            </a>
+                        </li>
+                        <li id="dropdownmenu" class="dropdown user user-menu" style="width:170px">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/inner/201512822344155194.jpg" class="user-image" alt="User Image" style="width:30px;height:30px;display:block;float: left;border-radius:50%">
+                                <span id="hidden-xs">管理员</span>
+                            </a>
+                            <ul id="pull-right">
+                                <li><img src="img/icon/manger icon/user-information.png"><a href="#">个人信息</a></li>
+                                <li><img src="img/icon/manger icon/clear.png"><a href="javascript:void();">清空缓存</a></li>
+                                <li><img src="img/icon/manger icon/skin.png"><a id="skin-color" href="#">夜间模式</a></li>
+                                <li><img src="img/icon/manger icon/exit.png"><a href="index.html">安全退出</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--左边导航-->
+        <div class="sidebar">
+            <div class="user-panel">
+                <img src="img/inner/201512822344155194.jpg" class="img-circle" alt="User Image">
+                <div class="pull-left">
+                    <p>管理员</p>
+                    <a><span></span>在线</a>
+                </div>
+                <form action="#" method="get" class="sidebar-form">
+                    <input type="text" name="search" class="form-control" placeholder="Search... " maxlength="8">
+                </form>
+            </div>
+            <div class="left-nav">
+                <h2 id="toggle-btn1"><span></span>内容管理</h2>
+                <ul style="display:none;" class="toggle-content1">
+                    <li><a href="mange/news-add.html" target="right"><span class="icon-caret-right"></span>新闻发布</a></li>
+                    <li><a href="mange/news-mange.html" target="right"><span class="icon-caret-right"></span>新闻管理</a></li>
+                    <li><a href="mange/calendar-add.html" target="right"><span class="icon-caret-right"></span>公告发布</a></li>
+                    <li><a href="mange/calendar-mange.html" target="right"><span class="icon-caret-right"></span>公告管理</a></li>
+                    <li><a href="mange/library.html" target="right"><span class="icon-caret-right"></span>图书管理</a></li>
+                    <li><a href="mange/picture-wrap.html" target="right"><span class="icon-caret-right"></span>首页轮播</a></li>
+                </ul>
+                <h2 id="toggle-btn2"><span></span>用户管理</h2>
+                <ul style="display:none" class="toggle-content2">
+                    <li><a href="mange/member-list.html" target="right"><span class="icon-caret-right"></span>成员管理</a></li>
+                </ul>
+                <h2 id="toggle-btn3"><span></span>项目管理</h2>
+                <ul style="display:none" class="toggle-content3">
+                    <li><a href="#" target="right"><span class="icon-caret-right"></span>项目申报</a></li>
+                    <li><a href="#" target="right"><span class="icon-caret-right"></span>项目跟踪</a></li>
+                    <li><a href="#" target="right"><span class="icon-caret-right"></span>项目组队</a></li>
+                </ul>
+                <h2 id="toggle-btn4"><span></span>个人中心</h2>
+                <ul style="display:none" class="toggle-content4">
+                    <li><a href="mange/user-modify.html" target="right"><span class="icon-caret-right"></span>修改密码</a></li>
+                    <li><a href="#" target="right"><span class="icon-caret-right"></span>修改信息</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--主要内容-->
+        <div class="admin">
+            <iframe src="mange/info.html" rameborder="0" src="info.html" name="right">
+            </iframe>
+        </div>
+    </div>
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script>
+    $('#dropdownmenu').click(function() {
+        $('#pull-right').slideToggle(200);
+    });
+    $('#toggle-btn1').click(function() {
+        $('.toggle-content1').slideToggle(200);
+    });
+    $('#toggle-btn2').click(function() {
+        $('.toggle-content2').slideToggle(200);
+    });
+    $('#toggle-btn3').click(function() {
+        $('.toggle-content3').slideToggle(200);
+    });
+    $('#toggle-btn4').click(function() {
+        $('.toggle-content4').slideToggle(200);
+    });
+    $('.sidebar-toggle').click(function() {
+        $('.toggle-content1').slideToggle(200);
+        $('.toggle-content2').slideToggle(200);
+        $('.toggle-content3').slideToggle(200);
+        $('.toggle-content4').slideToggle(200);
+    })
+    //皮肤设置
+    $('#skin-color').click(function(){
+        $('.navbar').css("background","#222d32");
+        $('.sidebar').css("background","#222d32");
+    })
+    </script>
+</body>
+
+</html>

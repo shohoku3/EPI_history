@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <TITLE>jQuery 3D翻转切换焦点图插件DEMO演示</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href="css/software.css" rel="stylesheet" />
+    <script src='js/jquery-3.1.0.min.js'></script>
+</head>
+
+<body>
+    <div id="cubeTransition">
+        <div class="page1">
+            <h1>
+                <span>炽</span>
+                <span>热</span>
+                <span>之</span>
+                <span>心</span>
+                <br>
+                <span>只</span>
+                <span>为</span>
+                <span>追</span>
+                <span>求</span>
+                <span>极</span>
+                <span>致</span>
+                <span>体</span>
+                <span>验</span>
+            </h1>
+            <p>前端对于网站来说，通常是指，网站的前台部分包括网站的表现层和结构层。因此前端技术一般分为前端设计和前端开发，前端设计一般可以理解为网站的视觉设计，前端开发则是网站的前台代码实现，包括基本的HTML和CSS以及JavaScript，现在最新的高级版本HTML5、CSS3，以及SVG等。</p>
+            <a href="#">WEB前端</a>
+            <img src="img/group-img/64977-106.jpg">
+        </div>
+        <div class="page2">
+            <h1 style="color:#fff;position:relative;top:390px;font-size:30px;">
+                <span>流</span>
+                <span>畅</span>
+                <span>不</span>
+                <span>只</span>
+                <span>一</span>
+                <span>次</span>
+                <span>的</span>
+                <span>挑</span>
+                <span>战</span>
+            </h1>
+            <p style="margin:10% auto;color:#fff">如果要编写网站后台，现在比较流行的语言有JSP、asp、PHP等等。另外还有java和c#等也常用作网站后台编辑语言。单纯而言语言各自有各自的优势，针对性不同。就应用而言，各有各的方向，举例来说：asp多用作中小型企业网站的制作，因其成本比较低（这个只是针对国内而言），也有做论坛的，如动网；而jsp的话针对的是访问量大的网站，比如银行之类的网站；PHP做中小型企业站的也有，但做论坛方面的比较多.</p>
+            <a href="#">WEB后端</a>
+            <img src="img/group-img/218912-106.jpg">
+        </div>
+        <div class="page3">
+            <h1 style="color:#fff;position: relative;
+    top:460px;">
+                <span>细</span>
+                <span>腻</span>
+                <span>画</span>
+                <span>质</span>
+                <span>乐</span>
+                <span>无</span>
+                <span>止</span>
+                <span>境</span>
+            </h1>
+            <p style="margin:10% auto;color:#000">美术的工程师(Art Engineer)，一般出身于艺术美术院校的艺术设计专业居多，根据工作性质分类为：网页美工，一般需要精通Photoshop等设计软件，对平面，色彩 ，基调，创意等进行处理。美工专业大部分因为电子商务的兴起而发展的职业，主要负责公司形象包装、网站优化、产品宣传画册、电子商务专题设计等工作。
+三维美工 是由美工用3DMAX丶maya等的三维角色模型设计，道具模型设计，环境场景模型设计，包装设计等</p>
+            <a href="#" style="position: relative;text-align:center;top:500px;display:block;width:5%;">UI设计</a>
+            <img src="img/group-img/90507-106.jpg">
+        </div>
+        <div class="page4">
+            <h1 style="word-wrap:break-word;width:30px;font-size:40px;letter-spacing: 40px;margin:0 auto;color:#fff;position:relative;top:140px">
+              快让生活慢下来
+            </h1>
+            <p style="margin:12% auto">移动开发也称为手机开发，或叫做移动互联网开发。是指以手机、PDA、UMPC等便携终端为基础，进行相应的开发工作，由于这些随身设备基本都采用无线上网的方式，因此，业内也称作为无线开发。</p>
+            <img src="img/group-img/183726-106.jpg">
+        </div>
+        <div class="page5">
+            <h1>
+                <span>引</span>
+                <span>爆</span>
+                <span>风</span>
+                <span>驰</span>
+                <span>电</span>
+                <span>掣</span>
+                <span>的</span>
+                <span>网</span>
+                <span>速</span>
+            </h1>
+            <p style="color:#000;margin:17% auto">C++是C语言的继承，它既可以进行C语言的过程化程序设计，又可以进行以抽象数据类型为特点的基于对象的程序设计，还可以进行以继承和多态为特点的面向对象的程序设计。C++擅长面向对象程序设计的同时，还可以进行基于过程的程序设计，因而C++就适应的问题规模而论，大小由之。</p>
+            <a href="#">C++开发</a>
+            <img src="img/group-img/215060-106.jpg">
+        </div>
+    </div>
+    <ul id="bullets"></ul>
+    <script>
+    function animationIn(i) {
+        console.log(i, 'i\'m in')
+        switch (i) {
+            case 1:
+                $('.page2 h1').fadeIn(100);
+                break;
+            case 2:
+                $('.page3 h1').fadeIn(100);
+                break;
+            default:
+                ;
+        }
+    }
+
+    function animationOut(i) {
+        console.log(i, 'i\'m out')
+        switch (i) {
+            case 1:
+                $('.page2 h1').fadeOut();
+                break;
+            case 2:
+                $('.page3 h1').fadeOut();
+                break;
+            default:
+                ;
+        }
+    }
+    </script>
+    <script src='js/mousewheel.js'></script>
+    <script src="js/jquery.touchSwipe.js"></script>
+    <script src="js/cubeTransition.js"></script>
+</body>
+
+</html>

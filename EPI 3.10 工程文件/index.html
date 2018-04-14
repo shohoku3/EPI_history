@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-type" content="text/html;">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scaleable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="ture">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="telephone=no" name="format-detection">
+    <meta name="keywords" content="EPI,西安邮电大学,EPI,西邮,西安邮电大学电子实验室暨大学生创新创业协会,电子实验室">
+    <meta name="description" content="EPI电子实验室是一个以硬件为主，软硬件相结合的高水平电子设计实验室">
+    <title>EPI电子实验室主页</title>
+    <!--default css-->
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <!--common css-->
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <!--page css-->
+    <link rel="stylesheet" href="css/index.css" type="text/css">
+    <!--main javascript-->
+    <script src="js/index.js" async></script>
+</head>
+
+<body>
+    <div id="homepage">
+        <div class="top">
+            <div id="home-top">
+                <div id="home-top-nav">
+                    <a href="index.html">HOME+</a>
+                    <a href="http://www.xiyou.edu.cn/">校园网+</a>
+                    <a href="download.html">相关下载</a>
+                    <a href="feedback.html">问题反馈</a>
+                    <a onclick="detectBrowser()">浏览器检测</a>
+                </div>
+                <div id="tool">
+                    <span onclick="findWeather()">天气</span>
+                    <span id="clock"></span>
+                    <span id="weekday"></span>
+                    <span id="weather"></span>
+                </div>
+            </div>
+            <div id="home-bottom">
+                <div class="logo">
+                    <span><a href="index.html">
+                        <img src="img/logo/logo-40.png">
+                    </a></span>
+                </div>
+                <div class="animate-area">
+                    <div class="btn-animate" id="about">
+                        <img src="img/icon/situation.png">
+                        <h1>概况</h1>
+                        <h2>ABOUT</h2>
+                        <ul class="toggle" id="toggle1">
+                            <li><a href="situation.html">概况</a></li>
+                            <li><a href="member.html">成员介绍</a></li>
+                    </div>
+                    <div class="btn-animate" id="group">
+                        <img src="img/icon/group.png">
+                        <h1>分组</h1>
+                        <h2>GROUP</h2>
+                        <ul class="toggle" id="toggle2">
+                            <li><a href="#">硬件组</a></li>
+                            <li><a href="group/software.html">软件组</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-animate" id="server">
+                        <img src="img/icon/server.png">
+                        <h1>服务</h1>
+                        <h2>SERVER</h2>
+                        <ul class="toggle" id="toggle3">
+                            <li><a href="show-library.html">图书借阅</a></li>
+                            <li><a href="chat.html">小组讨论</a></li>
+                            <li><a href="forum.html">论坛服务</a></li>
+                            <li><a href="download.html">资源共享</a></li>
+                            <li><a href="#">测试排名</a></li>
+                            <li><a href="#">课程信息</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-animate" id="login">
+                        <a href="login.html">
+                            <img src="img/icon/login.png">
+                            <h1>登陆</h1>
+                            <h2>login</h2>
+                        </a>
+                    </div>
+                    <div class="btn-animate" id="register.html">
+                        <a href="register.html">
+                            <img src="img/icon/register.png">
+                            <h1>注册</h1>
+                            <h2>REDISTER</h2>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="moveZoom">
+            <div id="select">
+                <div class="content-box">
+                    <a href="login.html"><span>登陆入口</span></a>
+                </div>
+                <div class="content-box">
+                    <a href="#" id="news"><span>新闻展示</span></a>
+                </div>
+                <div class="content-box">
+                    <a href="#" id="xiangmu"><span>项目展示</span></a>
+                </div>
+                <div class="content-box">
+                    <a href="register.html"><span>关于我们</span></a>
+                </div>
+            </div>
+            <div id="target">
+                <div class="header">
+                    <span><h1 style="font-family:'Edo SZ';z-index:50;margin:0px auto;text-align:center;line-height:50px;font-size:25px;color:#fff;text-shadow: 0px 0px 3px rgba(0,0,0,.5)">News</h1></span>
+                    <img src="img/icon/news.png">
+                </div>
+                <div class="target-content">
+                    <a href="404.html" class="news-bar">
+                        <span>EPI硬件部纳新圆满成功</span>
+                    </a>
+                    <a href="404.html" class="news-bar">
+                        <span>EPI电子实验室更名为大学生创新创业中心</span>
+                    </a>
+                    <a herf="404.html" class="news-bar">
+                        <span>EPI软件部于本周日晚7点进行大二年级的面试活动</span>
+                    </a>
+                    <a href="404.html" class="news-bar">
+                        <span>关于H5设计大赛的说明</span>
+                    </a>
+                    <a herf="404.html" class="news-bar">
+                        <span>西安邮电大学第三届软工杯</span>
+                    </a>
+                    <a href="404.html" class="news-bar">
+                        <span>EPI硬件部纳新圆满成功</span>
+                    </a>
+                    <a href="404.html" class="news-bar">
+                        <span>EPI电子实验室更名为大学生创新创业中心</span>
+                    </a>
+                    <a herf="404.html" class="news-bar">
+                        <span>EPI软件部于本周日晚7点进行大二年级的面试活动</span>
+                    </a>
+                    <a href="#" id="news-bar">
+                        <span>关于H5设计大赛的说明</span>
+                    </a>
+                    <a herf="#" id="news-bar">
+                        <span>西安邮电大学第三届软工杯</span>
+                    </a>
+                </div>
+            </div>
+            <div id="project" style="display:none;">
+                <div class="header">
+                    <span><h1 style="font-family:'Edo SZ';z-index:50;margin:0px auto;text-align:center;line-height:50px;font-size:25px;color:#fff;text-shadow: 0px 0px 3px rgba(0,0,0,.5)">Project</h1></span>
+                    <img src="img/icon/project.png">
+                </div>
+                <div class="project-content">
+                    <a href="#">
+                        <span>项目计划</span>
+                    </a>
+                    <a href="#">
+                        <span>项目计划</span>
+                    </a>
+                    <a href="#">
+                        <span>项目计划</span>
+                    </a>
+                    <a href="#">
+                        <span>项目计划</span>
+                    </a>
+                    <a href="#">
+                        <span>项目计划</span>
+                    </a>
+                </div>
+            </div>
+            <div id="card-container">
+                <div class="calendar">
+                    <div class="Date">
+                        <img src="img/icon/calendar.png">
+                        <h1 id="displaydate1"></h1>
+                        <h2 id="daypostfix1"></h2>
+                    </div>
+                    <div id="calendar-content">
+                        <blockquote>
+                            <div style="color:#333;font-size:15px;text-align:center;margin:10px;font-family:'黑体'">后台管理页面重新设计</div>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="calendar">
+                    <div class="Date">
+                        <img src="img/icon/calendar.png">
+                        <h1 id="displaydate2"></h1>
+                        <h2 id="daypostfix2"></h2>
+                    </div>
+                    <div id="calendar-content">
+                        <blockquote>
+                            <div style="color:#333;font-size:15px;text-align:center;margin:10px;font-family:'黑体'">轮播图重制</div>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="calendar">
+                    <div class="Date">
+                        <img src="img/icon/calendar.png">
+                        <h1 id="displaydate3"></h1>
+                        <h2 id="daypostfix3"></h2>
+                    </div>
+                    <div id="calendar-content">
+                        <blockquote>
+                            <div style="color:#333;font-size:15px;text-align:center;margin:10px;font-family:'黑体'">登录注册页面实现</div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom" id="bottom">
+            <span>Copyright © EPI电子实验室 2016-2018</span>
+            <span>西安邮电大学二号实验楼444/424</span>>
+            <div class="icon">
+                <a href="http://write.blog.csdn.net/postlist"><img src="img/icon/CSDN.png"></a>
+                <a href="#"><img src="img/icon/wechat.png"></a>
+                <a href="#"><img src="img/icon/QQ.png"></a>
+                <a href="#"><img src="img/icon/webo.png"></a>
+                <a href="#"><img src="img/icon/baidu.png"></a>
+                <a href="#"><img src="img/icon/github.png"></a>
+            </div>
+        </div>
+        <div id="big-banner-wrap">
+            <div id="big-banner-pic-wrap">
+                <div id="project-detail">
+                    <div class="project"><img src="img/bg/209068-106.jpg"></div>
+                    <div class="project"><img src="img/bg/218097-106.jpg"></div>
+                    <div class="project"><img src="img/bg/75002-106.jpg"></div>
+                    <div class="project"><img src="img/bg/319914-106.jpg"></div>
+                    <div class="project"><img src="img/bg/57180-106.jpg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--script jquery-->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script>
+    //背景图轮播
+    $("#project-detail").slick({
+        slidesToShow: 1,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        fade: true,
+    });
+    //nav 
+    $('#about').mouseover(function() {
+        $('#toggle1').show();
+        $('#big-banner-wrap').addClass('blur');
+    });
+    $('#about').mouseout(function() {
+        $('#toggle1').hide();
+        $('#big-banner-wrap').removeClass('blur');
+    });
+    $('#group').mouseover(function() {
+        $('#toggle2').show();
+        $('#big-banner-wrap').addClass('blur');
+    });
+    $('#group').mouseout(function() {
+        $('#toggle2').hide();
+        $('#big-banner-wrap').removeClass('blur');
+    });
+    $('#server').mouseover(function() {
+        $('#toggle3').show();
+        $('#big-banner-wrap').addClass('blur');
+    });
+    $('#server').mouseout(function() {
+        $('#toggle3').hide();
+        $('#big-banner-wrap').removeClass('blur');
+    });
+    //card-container
+    var cc = $('#card-container');
+    cc.click(function() {
+        var firstCard = cc.children('.calendar').first(),
+            cssRoll = {
+                transform: 'rotate(-45deg)',
+                opacity: 0
+            };
+        firstCard.css(cssRoll);
+        setTimeout(function() {
+            cc.append(firstCard);
+            firstCard.attr('style', '');
+        }, 300);
+    });
+    //news栏开关
+    $('#news').click(function() {
+        $('#target').toggle(200);
+        $('#project').hide();
+        $('.target-content').addClass('.news-bar');
+    });
+    $('#target').mouseover(function() {
+        $('#big-banner-wrap').addClass('blur');
+    });
+    $('#target').mouseout(function() {
+        $('#big-banner-wrap').removeClass('blur');
+    });
+    //project栏开关
+    $('#xiangmu').click(function() {
+        $('#project').toggle(200);
+        $('#target').hide();
+    });
+    </script>
+</body>
+</html>

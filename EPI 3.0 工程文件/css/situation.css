@@ -1,0 +1,100 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#situation1 {
+    position: relative;
+    margin-top: 200px;
+    height:auto;
+}
+
+#sit_1 {
+    color: whitesmoke;
+    background: transparent url(http://www.bupt.edu.cn/img/sub_nav.png) repeat-x;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+
+#sit_1 h2 {
+    color: white;
+    margin-right: 50px;
+    font-size: 22px;
+    font-family: '仿宋';
+    line-height: 40px;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+#sit_2 {
+    height: 600px;
+    background: #fff;
+}
+
+#sit_2_1 {
+    height: 600px;
+    margin: 0 auto;
+    width: 1200px;
+}
+
+#sit2_ul_1 {
+    list-style-type: none;
+}
+
+#sit2_ul_1 hr {
+    margin: 10px 0px;
+    color: #e3e3e3;
+}
+
+#sit_2 h1{
+	font-size: 18px;
+	font-family: '黑体';
+	text-indent:10px;
+	color:#474646;
+}
+#sit_left {
+    height: 600px;
+    width: 250px;
+    float: left;
+    position:relative;
+    left:20px;
+}
+
+#sit_2_ul_2 {
+    list-style-type: none;
+    width:250px;
+    height:auto;
+    float:left;
+    position: relative;
+    top:-10px;
+}
+
+#sit_2_ul_2 li {
+    float: left;
+    width: 60px;
+    height: 60px;
+    background: #FFF6D0;
+    display:block;
+    margin:10px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.5);
+}
+
+#sit_2_ul_2 li:hover{
+    -webkit-transition:ease-in-out 0.2s;
+    -webkit-transform:scale(1.1);
+}
+
+#sit_2_ul_2 li span{
+    font-size:16px;
+	color:#695959;
+    font-weight:600;
+    display:block;
+    width:40px;
+    height:40px;
+    margin:10px;
+    font-family: '宋体';
+}
+#start{
+    position: relative;
+    left:220px;
+    cursor: pointer;
+}

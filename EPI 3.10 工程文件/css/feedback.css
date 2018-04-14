@@ -1,0 +1,405 @@
+ html {
+     height: 100%;
+     position: relative;
+     overflow: hidden;
+ }
+ 
+ body {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     position: relative;
+     overflow: hidden;
+     font: 12px/1.5 tahoma, arial, \5FAE\8F6F\96C5\9ED1, sans-serif;
+     font-family: "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+     background: #e3e3e3;
+         -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+ }
+ 
+ body,
+ div,
+ p,
+ ul,
+ ol,
+ li,
+ dl,
+ dt,
+ dd,
+ h1,
+ h2,
+ h3,
+ h4,
+ p,
+ table,
+ input {
+     margin: 0;
+     padding: 0;
+     font-weight: normal;
+ }
+ 
+ table {
+     width: auto;
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+ 
+ li {
+     list-style: none;
+     vertical-align: bottom;
+ }
+ 
+ em,
+ i {
+     font-style: normal;
+ }
+ 
+ a {
+     outline: none;
+     text-decoration: none;
+     transition: color .3s, opacity .3s, transform .3s;
+     -webkit-transition: color .3s, opacity .3s, transform .3s;
+ }
+ 
+ a:hover {
+     outline: none;
+     text-decoration: underline;
+ }
+ 
+ img {
+     border: 0;
+ }
+ /*
+wrap
+*/
+ 
+ #wrapper {
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+ }
+ 
+ #container {
+     width: 80%;
+     height: 90%;
+     margin: 0 auto;
+     position: relative;
+     top: 10%;
+     left: 0;
+     background: #fff;
+     box-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+     border-radius: 2px;
+ }
+ 
+ #inner {
+     position: absolute;
+     top: 30px;
+     left: 30px;
+     width: 270px;
+     height:285px;
+     float: left;
+     border: 1px solid #e3e3e3;
+ }
+ 
+ #inner h1 {
+     font-size: 15px;
+     font-family: '微软雅黑';
+     line-height: 40px;
+     text-align: center;
+     background: #222d33;
+     box-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+     color: #f2f2f2;
+ }
+ 
+ #inner img {
+     box-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+ }
+ 
+ #inner #img1 {
+     width: 50px;
+     height: 50px;
+     position: absolute;
+     top: 65px;
+     left: 30px;
+     float: left;
+     border-radius: 5px;
+ }
+ 
+ #inner #img2 {
+     width: 50px;
+     height: 50px;
+     position: absolute;
+     top: 65px;
+     left: 110px;
+     float: left;
+     border-radius: 5px;
+ }
+ 
+ #inner #img3 {
+     width: 50px;
+     height: 50px;
+     position: absolute;
+     top: 65px;
+     left: 190px;
+     float: left;
+     border-radius: 5px;
+ }
+ 
+ #inner #img4 {
+     width: 50px;
+     height: 50px;
+     position: absolute;
+     top: 145px;
+     left: 30px;
+     float: left;
+     border-radius: 5px;
+ }
+ 
+ #inner #img5 {
+     width: 50px;
+     height: 50px;
+     position: absolute;
+     top: 145px;
+     left: 110px;
+     float: left;
+     border-radius: 5px;
+ }
+ 
+ #inner span[id="delect"] {
+     width: 50px;
+     height: 50px;
+     display: block;
+     text-align: center;
+     font-size: 50px;
+     position: absolute;
+     top: 65px;
+     left: 110px;
+     border-radius: 5px;
+     line-height: 40px;
+     cursor: pointer;
+     color: #A90404;
+     background: rgba(0, 0, 0, .5);
+     display: none;
+     z-index: 10;
+ }
+  
+ #inner input[type="button"] {
+     border: none;
+     width: 150px;
+     height: 40px;
+     display: block;
+     margin: 0px auto;
+     position: relative;
+     top:175px;
+     color: #fff;
+     background: #4C9A39;
+     font-size: 14px;
+     font-family: '微软雅黑';
+     box-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+ }
+ 
+ #inner input[type="button"]:hover {
+     background: #376D29;
+ }
+ 
+ #chat-box {
+     width: 570px;
+     height: 460px;
+     position: absolute;
+     top: 30px;
+     left: 330px;
+     float: left;
+     border: 1px solid #e3e3e3;
+     display: none;
+ }
+ 
+ #chat-box h1 {
+     font-size: 15px;
+     font-family: '微软雅黑';
+     line-height: 40px;
+     text-align: center;
+     background: #222d33;
+     box-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+     color: #f2f2f2;
+ }
+ 
+ #chat-box .close {
+     width: 40px;
+     height: 40px;
+     float: right;
+     position: relative;
+     top: -40px;
+ }
+ 
+ #chat-box .bottom-toggle {
+     width: 40px;
+     height: 40px;
+     float: left;
+     position: relative;
+     top: -30px;
+     left: 340px;
+ }
+ 
+ #chat-box .bottom-toggle img {
+     width: 15px;
+     height: 15px;
+     margin: 3px 0px;
+ }
+ 
+ #chat-box .close img {
+     width: 30px;
+     height: 30px;
+     margin: 5px;
+ }
+ 
+ #chat-box .close:hover {
+     background: rgba(192, 57, 43, 1);
+ }
+ 
+ #chat-box .content {
+     width: 540px;
+     height: 420px;
+     position: absolute;
+     top: 40px;
+     left: 30px;
+ }
+ 
+ #header-nav {
+     width: 500px;
+     height: 80px;
+     z-index: 100;
+     display: none;
+     position: absolute;
+     top: 40px;
+     left: 50px;
+     border-radius: 0px 0px 5px 5px;
+     border: 1px solid #e3e3e3;
+     background: #e3e3e3;
+     box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+ }
+ 
+ #header-nav li {
+     width: 80px;
+     height: 80px;
+     display: inline-block;
+     margin: 0;
+     border: none;
+ }
+ 
+ #header-nav li img {
+     width: 50px;
+     height: 50px;
+     display: block;
+     margin: 15px;
+     box-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+     border-radius: 5px;
+ }
+ 
+ #chat-box .content {
+     width: 100%;
+     height: 310px;
+     position: absolute;
+     top: 40px;
+     left: 0px;
+     overflow-y: scroll;
+ }
+ 
+ #chat-box .content .chat-bar {
+     width: 100%;
+     height: 60px;
+ }
+ 
+ .chat-bar .left-icon {
+     float: left;
+     position: relative;
+     top: 10px;
+     left: 10px;
+ }
+ 
+ .chat-bar .right-icon {
+     float: right;
+     position: relative;
+     top: 10px;
+     right: 10px;
+ }
+ 
+ .chat-bar img {
+     width: 50px;
+     height: 50px;
+     box-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+ }
+ 
+ .chat-bar span {
+     width: auto;
+     height: 35px;
+     font-size: 15px;
+     background: #e3e3e3;
+     color: #000;
+     padding: 0px 10px;
+     line-height: 35px;
+     box-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+ }
+ 
+ .chat-bar .left-bar {
+     float: left;
+     position: relative;
+     top: 20px;
+     left: 30px;
+ }
+ 
+ .chat-bar .right-bar {
+     float: right;
+     position: relative;
+     top: 20px;
+     right: 30px;
+ }
+ 
+ .bottom-box {
+     width: 100%;
+     height: 110px;
+     position: absolute;
+     bottom: 0px;
+     z-index: 10;
+     background: #222d33;
+     box-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+     padding: 0;
+     border: none;
+ }
+ 
+ .bottom-box textarea {
+     resize: none;
+     width: 540px;
+     height: 40px;
+     margin: 5px auto 0px auto;
+     display: block;
+     font-family: '黑体';
+     font-size: 15px;
+     border-radius: 5px;
+ }
+ 
+ .bottom-box input[type="button"] {
+     position: absolute;
+     top:60px;
+     right: 50px;
+     border: none;
+     float: right;
+     display: block;
+     width: 100px;
+     height: 40px;
+     font-size: 14px;
+     font-family: '微软雅黑';
+     border-radius: 5px;
+     background: #4C9A39;
+     color: #fff;
+     box-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+ }
+ 
+ .bottom-box input[type="button"]:hover {
+     background: #376D29;
+ } 
+ .click{
+     border:1px dashed #333d22;
+ }

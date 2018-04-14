@@ -1,0 +1,203 @@
+/*normalize*/
+
+html {
+    height: 100%;
+    position: relative;
+}
+
+body {
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    font: 12px/1.5 tahoma, arial, \5FAE\8F6F\96C5\9ED1, sans-serif;
+    font-family: "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+    background: #e3e3e3;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+body,
+div,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+p,
+table,
+input {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+table {
+    width: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+li {
+    list-style: none;
+    vertical-align: bottom;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    transition: color .3s, opacity .3s, transform .3s;
+    -webkit-transition: color .3s, opacity .3s, transform .3s;
+}
+
+a:hover {
+    outline: none;
+    text-decoration: underline;
+}
+
+img {
+    border: 0;
+}
+
+
+/*
+forum layout
+ */
+
+#container {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #aaa;
+    height:auto;
+}
+
+.content {
+    width: 80%;
+    height:100%;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+}
+
+.header {
+    width: 100%;
+    height: 15%;
+    margin: 30px 0 0 0;
+    background: #333;
+}
+
+.header h1 {
+    font-size:30px;
+    text-align:center;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, .5);
+    line-height:60px;
+}
+.header h2{
+     font-size:20px;
+     color:#fff;
+     line-height:40px;
+     text-align:right;
+     position: relative;
+     right:2%;
+}
+.table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    /*边框崩塌：崩塌；边框合并*/
+    border-spacing: 0;
+    overflow: visible;
+}
+
+.table th {
+    border: 1px solid #ddd;
+    vertical-align: bottom;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    font-family: '黑体';
+    cursor: pointer;
+}
+.table td {
+    border-top: 1px solid #ddd;
+    padding: 15px;
+    vertical-align: top;
+    text-align: center;
+    cursor: pointer;
+}
+.table td:active{
+    height:calc(+50px);
+}
+.table td .stick {
+    background: #1CB8F3;
+    color: #fff;
+    padding: 5px;
+    border-radius:0px 0px 0px 5px;
+}
+
+.table td .perfect {
+    background: #d03c52;
+    color: #fff;
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 0px 0px 5px 0px;
+}
+
+.table td .click {
+    border: 1px solid #e3e3e3;
+    padding: 5px 10px;
+    background: #e3e3e3
+}
+.table td img{
+     width:20%;
+     height:30%;
+     float:left;
+     margin-left:5%;
+}
+.table > tbody > tr:nth-child(odd) > td,
+.table > tbody > tr:nth-child(odd) > th {
+    background-color: #f9f9f9;
+    /*odd;子选择器*/
+}
+
+
+/*条纹-IE9以下无效果*/
+
+.table th {
+    border-bottom: 2px solid #e3e3e3;
+}
+
+.table td a {
+    color: #000;
+    text-decoration:none;
+}
+
+.table td a:hover {
+    color: #e3e3e3;
+}
+
+.table > tbody > tr:hover > td,
+.table > tbody > tr:hover > th {
+    background-color: #f9f9f9;
+}
+
+.table .inner>img{
+    width:25px;
+    height:25px;
+}
